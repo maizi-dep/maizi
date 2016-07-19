@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'maizi.urls'
+#ROOT_URLCONF = 'maizi.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'maizi.wsgi.application'
+#WSGI_APPLICATION = 'maizi.wsgi.application'
 
 
 # Database
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'maizi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'maizi',
+        'USER': 'root',
+        'PASSWORD': 'MJJmjj5209991!',
+        'HOST': '112.25.230.26',
+        'PORT': '3307',
     }
 }
 
